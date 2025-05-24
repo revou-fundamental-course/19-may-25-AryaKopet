@@ -115,7 +115,7 @@ hr {
 
 /* Footer */
 footer {
-  background-color: #6200ea;
+  background: linear-gradient(135deg, #6b6bd1, #4e4eb8);
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
