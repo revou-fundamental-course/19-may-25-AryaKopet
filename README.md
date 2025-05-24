@@ -20,13 +20,3 @@ Proyek ini merupakan mini aplikasi web berbasis **HTML, CSS, dan JavaScript murn
 - `JavaScript` (DOM Manipulation & Logic)
 
 ---
-
-## 📷 Tampilan Antarmuka
-
-![Preview](https://via.placeholder.com/700x400?text=Preview+Konversi+Suhu)  
-<sub>*Gambar tampilan UI bisa kamu tambahkan dari hasil deploy GitHub Pages*</sub>
-
----
-
-## 🎯 Struktur Folder
-
