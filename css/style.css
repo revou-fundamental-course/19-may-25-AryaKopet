@@ -1,16 +1,146 @@
+/* Reset dan dasar */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html {
-    background-color: #ff0000;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1 {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
+/* Header */
+header {
+  background: linear-gradient(135deg, #6b6bd1, #4e4eb8);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.header-container p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Main container seperti buku */
+main {
+  background: #fff;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Semua section menyatu tanpa jarak */
+main section + section {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* Form & Textarea */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  resize: none;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Tombol */
+.buttons {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px;
+  background-color: #6b6bd1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4e4eb8;
+}
+
+/* Link */
+a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Heading dan garis */
+h3 {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+/* Margin bawah kecil */
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #6200ea;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .header-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-container p {
+    font-size: 0.9rem;
+  }
 }
