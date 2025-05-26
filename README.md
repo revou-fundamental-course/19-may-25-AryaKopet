@@ -9,7 +9,7 @@ Proyek ini merupakan mini aplikasi web berbasis **HTML, CSS, dan JavaScript murn
 - 📐 **Menampilkan rumus konversi secara real-time**
 - 📘 **Penjelasan lengkap tentang cara kerja konversi suhu**
 - ✅ **Validasi input sederhana dan user-friendly**
-- 🎁 **Input 100 °Celcius, konversikan, dan reverser untuk mendapatkan easter egg**
+- 🎁 **Input 100 °Celcius, konversikan, dan reverse untuk mendapatkan easter egg**
 
 ---
 
