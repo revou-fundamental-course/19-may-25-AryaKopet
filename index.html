@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Konversi Suhu</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
+    <!-- Tombol Dark Mode -->
+    <button id="toggle-dark">🌙 Dark Mode</button>
+
+    <!-- Suara klik -->
+    <audio
+      id="click-sound"
+      src="https://www.soundjay.com/button/beep-07.wav"
+      preload="auto"
+    ></audio>
+
     <header>
       <div class="header-container">
-        <h1>Kalkulator Konversi Suhu</h1>
+        <h1><span id="typing-text"></span></h1>
         <p>Mudah & Cepat Konversi &deg;C ke &deg;F dan sebaliknya</p>
       </div>
     </header>
@@ -69,7 +84,5 @@
     <footer>
       <p>&copy; 2025 Arya Wijaya | All Right Reserved</p>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
