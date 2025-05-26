@@ -17,7 +17,7 @@ document.getElementById('convert').addEventListener('click', () => {
 
   // 100°C Easter Egg
   if (celsius === 100) {
-    showPopup("Air mendidih pada 100°C 🌡️", "💧", "100°C");
+    showPopup("Air mendidih pada suhu 100°C🌡️", "💧", "100°C");
   }
 });
 
@@ -42,13 +42,13 @@ document.getElementById('reverse').addEventListener('click', () => {
 
   // 212°F Easter Egg
   if (f === 212) {
-    showPopup("Air mendidih pada 212°F 🌡️", "🔥", "212°F");
+    showPopup("Air mendidih pada suhu 212°F🌡️", "🔥", "212°F");
   }
 });
 
 // Efek mengetik di header
 const typingTarget = document.getElementById('typing-text');
-const typingWords = "🌡️ Kalkulator Konversi Suhu";x
+const typingWords = "🌡️ Kalkulator Konversi Suhu";
 let typingIndex = 0;
 
 function typeText() {

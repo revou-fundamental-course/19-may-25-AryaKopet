@@ -229,6 +229,19 @@ body.dark footer, body.dark header {
   animation: popup-fade 0.3s ease-in-out;
 }
 
+.popup-header {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 1rem;
+  margin: -30px -30px 20px -30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .popup-icon {
   font-size: 3rem;
   display: block;
