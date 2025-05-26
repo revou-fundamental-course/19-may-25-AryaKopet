@@ -15,9 +15,9 @@ document.getElementById('convert').addEventListener('click', () => {
   fahrenheitOutput.value = fahrenheit.toFixed(2);
   formulaOutput.value = `${celsius}°C × (9/5) + 32 = ${fahrenheit.toFixed(2)}°F`;
 
-  // 🎉 Easter egg jika input 100°C
+  // 100°C Easter Egg
   if (celsius === 100) {
-    alert("💧 Tahukah kamu? 100°C adalah titik didih air dalam skala Celsius!");
+    showPopup("Air mendidih pada 100°C 🌡️", "💧", "100°C");
   }
 });
 
@@ -40,15 +40,15 @@ document.getElementById('reverse').addEventListener('click', () => {
   celsiusInput.value = c.toFixed(2);
   formulaOutput.value = `${f}°F - 32 × (5/9) = ${c.toFixed(2)}°C`;
 
-  // 🎉 Easter egg jika input 212°F
+  // 212°F Easter Egg
   if (f === 212) {
-    alert("🔥 Tahukah kamu? 212°F adalah titik didih air dalam skala Fahrenheit!");
+    showPopup("Air mendidih pada 212°F 🌡️", "🔥", "212°F");
   }
 });
 
 // Efek mengetik di header
 const typingTarget = document.getElementById('typing-text');
-const typingWords = "🌡️ Kalkulator Konversi Suhu";
+const typingWords = "🌡️ Kalkulator Konversi Suhu";x
 let typingIndex = 0;
 
 function typeText() {
@@ -79,4 +79,23 @@ document.querySelectorAll('button').forEach(btn => {
     sound.currentTime = 0;
     sound.play();
   });
+});
+
+// Fungsi Tampilkan Popup
+function showPopup(message, emoji = "🎉", title = "Titik Didih Air!") {
+  const popup = document.getElementById("popup-card");
+  const popupMessage = document.getElementById("popup-message");
+  const popupIcon = popup.querySelector(".popup-icon");
+  const popupTitle = popup.querySelector(".popup-title");
+
+  popupMessage.textContent = message;
+  popupIcon.textContent = emoji;
+  popupTitle.textContent = title;
+
+  popup.classList.remove("hidden");
+}
+
+// Tutup popup
+document.getElementById("close-popup").addEventListener("click", () => {
+  document.getElementById("popup-card").classList.add("hidden");
 });
