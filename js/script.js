@@ -87,13 +87,19 @@ function showPopup(message, emoji = "🎉", title = "Titik Didih Air!") {
   const popupMessage = document.getElementById("popup-message");
   const popupIcon = popup.querySelector(".popup-icon");
   const popupTitle = popup.querySelector(".popup-title");
+  const popupSound = document.getElementById("popup-sound");
 
   popupMessage.textContent = message;
   popupIcon.textContent = emoji;
   popupTitle.textContent = title;
 
   popup.classList.remove("hidden");
+
+  // 🔊 Mainkan suara popup
+  popupSound.currentTime = 0;
+  popupSound.play();
 }
+
 
 // Tutup popup
 document.getElementById("close-popup").addEventListener("click", () => {
