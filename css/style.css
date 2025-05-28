@@ -31,7 +31,7 @@ header {
   font-weight: 300;
 }
 
-/* Main container seperti buku */
+/* Main container */
 main {
   background: #fff;
   max-width: 700px;
@@ -41,7 +41,6 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Semua section menyatu tanpa jarak */
 main section + section {
   margin-top: 20px;
   padding-top: 10px;
@@ -64,7 +63,6 @@ textarea {
   border: 1px solid #ccc;
 }
 
-/* Tombol */
 .buttons {
   margin: 15px 0;
   display: flex;
@@ -88,7 +86,6 @@ button:hover {
   background-color: #4e4eb8;
 }
 
-/* Link */
 a {
   color: #6200ea;
   text-decoration: none;
@@ -98,7 +95,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Heading dan garis */
 h3 {
   margin-top: 25px;
   font-size: 1.2rem;
@@ -108,12 +104,10 @@ hr {
   margin: 10px 0;
 }
 
-/* Margin bawah kecil */
 .mb-5 {
   margin-bottom: 5px;
 }
 
-/* Footer */
 footer {
   background: linear-gradient(135deg, #6b6bd1, #4e4eb8);
   text-align: center;
@@ -342,7 +336,7 @@ body.dark #toggle-dark {
   color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: background-color 0.3s, color 0.3s;
-  width: auto; /* ⬅️ default: hanya sepanjang konten */
+  width: auto; 
 }
 
 /* Saat mode dark */
