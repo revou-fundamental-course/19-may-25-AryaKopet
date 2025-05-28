@@ -345,6 +345,7 @@ body.dark #toggle-dark {
   color: #222;
 }
 
+/* Responsif */
 @media (max-width: 600px) {
   #toggle-dark {
     top: 2px;
