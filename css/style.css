@@ -399,3 +399,17 @@ body.dark #toggle-dark {
 #alert-popup #close-alert:hover {
   background: #cc0000;
 }
+
+/* efek shake pop-up alert */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}

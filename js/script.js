@@ -124,13 +124,21 @@ document.getElementById("close-popup").addEventListener("click", () => {
 function showAlertPopup(message) {
   const alertPopup = document.getElementById("alert-popup");
   const alertMessage = document.getElementById("alert-message");
+  const alertSound = document.getElementById("alert-sound");
+
   alertMessage.textContent = message;
   alertPopup.classList.remove("hidden");
 
-  const popupSound = document.getElementById("alert-sound");
-  popupSound.currentTime = 0;
-  popupSound.play();
+  // Jalankan animasi shake
+  alertPopup.classList.remove("shake"); // reset dulu
+  void alertPopup.offsetWidth; // trik paksa reflow agar animasi bisa diulang
+  alertPopup.classList.add("shake");
+
+  // Mainkan suara
+  alertSound.currentTime = 0;
+  alertSound.play();
 }
+
 
 document.getElementById("close-alert").addEventListener("click", () => {
   document.getElementById("alert-popup").classList.add("hidden");
