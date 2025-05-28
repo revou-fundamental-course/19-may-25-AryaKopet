@@ -367,3 +367,35 @@ body.dark #toggle-dark {
     margin: 0;
   }
 }
+
+/* Popup Alert */
+#alert-popup .popup-header {
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 1rem;
+  margin: -30px -30px 20px -30px;
+  text-align: center;
+}
+
+#alert-popup .popup-title {
+  font-size: 1.3rem;
+  color: #d00000;
+}
+
+#alert-popup .popup-message {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#alert-popup #close-alert {
+  background: #ff4d4d;
+}
+
+#alert-popup #close-alert:hover {
+  background: #cc0000;
+}

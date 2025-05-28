@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Konversi Suhu</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -19,7 +19,6 @@
       <span class="btn-text">Dark Mode</span>
     </button>
 
-    <!-- Suara Easter Egg -->
     <audio
       id="click-sound"
       src="https://www.soundjay.com/button/beep-07.wav"
@@ -34,53 +33,41 @@
     </header>
 
     <main>
-      <!-- Section: Introduction -->
-      <section id="introduction" class="container">
+      <section class="container" id="introduction">
         <p>
-          Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik
-          tombol Konversi untuk mendapatkan hasil konversi dalam bentuk
-          Fahrenheit (&deg;F).
+          Masukkan suhu derajat Celsius (&deg;C) atau Fahrenheit (&deg;F), lalu
+          klik tombol Konversi.
         </p>
       </section>
 
-      <!-- Section: Form Input -->
-      <section id="temperature-form" class="container">
-        <label for="celsius" class="mb-5">Celsius (&deg;C):</label>
+      <section class="container" id="temperature-form">
+        <label for="celsius" id="input-label">Celsius (&deg;C):</label>
         <textarea id="celsius" rows="2"></textarea>
 
         <div class="buttons">
-          <button id="convert">Konversi</button>
+          <button id="convert">Konversi ke Fahrenheit</button>
           <button id="reset">Reset</button>
           <button id="reverse">Reverse</button>
         </div>
 
-        <label for="fahrenheit" class="mb-5">Fahrenheit (&deg;F):</label>
+        <label for="fahrenheit" id="output-label">Fahrenheit (&deg;F):</label>
         <textarea id="fahrenheit" rows="2" readonly></textarea>
       </section>
 
-      <!-- Section: Hasil Kalkulasi -->
-      <section id="calculation-result" class="container">
-        <label for="formula" class="mb-5">Cara Kalkulasi:</label>
+      <section class="container" id="calculation-result">
+        <label for="formula">Cara Kalkulasi:</label>
         <textarea id="formula" rows="2" readonly></textarea>
       </section>
 
-      <!-- Section: Panduan Konversi -->
-      <section id="conversion-guide" class="container">
+      <section class="container" id="conversion-guide">
         <h3>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h3>
         <hr />
         <p>
-          Suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) sama dengan suhu
-          <i>S</i> dalam derajat Celsius (&deg;C) kali <sup>9</sup>&frasl;<sub
-            >5</sub
-          >
-          tambah <b>32</b>.
-        </p>
-        <p>
-          S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> &times;
+          S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> ×
           <sup>9</sup>&frasl;<sub>5</sub>) + 32
         </p>
         <p>atau</p>
-        <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> &times; 1.8) + 32</p>
+        <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 1.8) + 32</p>
       </section>
     </main>
 
@@ -101,11 +88,10 @@
           ><i class="fab fa-instagram"></i
         ></a>
       </div>
-      <br />
-      <p>&copy; 2025 Arya Wijaya | All Right Reserved</p>
+      <p>&copy; 2025 Arya Wijaya | All Rights Reserved</p>
     </footer>
 
-    <!-- Easter Egg Pop-Up -->
+    <!-- Pop-Up Easter Egg -->
     <div id="popup-card" class="popup hidden">
       <div class="popup-content">
         <div class="popup-header">🎁 Easter Egg</div>
@@ -116,11 +102,32 @@
       </div>
     </div>
 
-    <!-- Suara untuk Easter Egg -->
+    <!-- Pop-Up Sound -->
     <audio
       id="popup-sound"
       src="assets/sounds/pop-up effect.wav"
       preload="auto"
     ></audio>
+
+    <!-- Alert Sound -->
+    <audio
+      id="alert-sound"
+      src="assets/sounds/alert.wav"
+      preload="auto"
+    ></audio>
+
+    <!-- Alert Pop-Up -->
+    <div id="alert-popup" class="popup hidden">
+      <div class="popup-content">
+        <div class="popup-header" style="background-color: #ff4d4d">
+          ⚠️ Peringatan
+        </div>
+        <h2 class="popup-title">Input Tidak Valid</h2>
+        <p class="popup-message" id="alert-message">
+          Silakan masukkan angka terlebih dahulu!
+        </p>
+        <button id="close-alert">Tutup</button>
+      </div>
+    </div>
   </body>
 </html>
