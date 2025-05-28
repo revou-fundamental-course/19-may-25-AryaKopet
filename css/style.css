@@ -280,3 +280,50 @@ body.dark footer, body.dark header {
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
+/* Sosial Media Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #010203;
+}
+
+/* Tombol dark mode dinamis */
+#toggle-dark {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark #toggle-dark {
+  background-color: #fff;
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  #toggle-dark {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}

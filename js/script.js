@@ -64,7 +64,8 @@ typeText();
 const toggleBtn = document.getElementById('toggle-dark');
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark');
-  // Ganti teks tombol
+
+  // Ganti teks & gaya tombol
   if (document.body.classList.contains('dark')) {
     toggleBtn.textContent = '☀️ Light Mode';
   } else {
