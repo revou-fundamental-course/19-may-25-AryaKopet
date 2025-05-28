@@ -327,3 +327,48 @@ body.dark #toggle-dark {
     font-size: 0.85rem;
   }
 }
+
+#toggle-dark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, color 0.3s;
+  width: auto; /* ⬅️ default: hanya sepanjang konten */
+}
+
+/* Saat mode dark */
+body.dark #toggle-dark {
+  background-color: #fff;
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  #toggle-dark {
+    top: 2px;
+    right: 10px;
+    padding: 6px 6px; 
+    font-size: 1rem;  
+    line-height: 1;   
+    width: auto;      
+    height: auto;     
+  }
+
+  #toggle-dark .btn-text {
+    display: none;
+  }
+
+  #toggle-dark .btn-icon {
+    font-size: 1.2rem;
+    display: block;
+    margin: 0;
+  }
+}

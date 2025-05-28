@@ -60,16 +60,20 @@ function typeText() {
 }
 typeText();
 
-// Dark Mode Toggle
 const toggleBtn = document.getElementById('toggle-dark');
+const btnIcon = toggleBtn.querySelector('.btn-icon');
+const btnText = toggleBtn.querySelector('.btn-text');
+
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 
-  // Ganti teks & gaya tombol
+  // Ganti ikon dan teks
   if (document.body.classList.contains('dark')) {
-    toggleBtn.textContent = '☀️ Light Mode';
+    btnIcon.textContent = '☀️';
+    btnText.textContent = 'Light Mode';
   } else {
-    toggleBtn.textContent = '🌙 Dark Mode';
+    btnIcon.textContent = '🌙';
+    btnText.textContent = 'Dark Mode';
   }
 });
 
