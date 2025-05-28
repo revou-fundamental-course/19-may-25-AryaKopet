@@ -100,7 +100,7 @@ function showPopup(message, emoji = "🎉", title = "Titik Didih Air!") {
 
   popup.classList.remove("hidden");
 
-  // 🔊 Mainkan suara popup
+  // suara popup easter egg
   popupSound.currentTime = 0;
   popupSound.play();
 }
